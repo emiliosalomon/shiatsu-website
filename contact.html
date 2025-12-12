@@ -39,17 +39,33 @@
     <p><strong>Telefon:</strong> <a href="tel:+4369910339191">0699 10 33 9191</a></p>
     <p><strong>E‑Mail:</strong> <a href="mailto:tobivox@gmail.com">tobivox@gmail.com</a></p>
     <p><strong>Praxisadresse:</strong><br>
-      Dr. Karl Giannogasse 7<br>
+      Dr. Karl Giannoni Gasse 7<br>
       2340 Mödling<br>
       Österreich</p>
     <p>Ich freue mich darauf, von Ihnen zu hören!</p>
     <h3>Kontaktformular</h3>
-    <form action="mailto:tobivox@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="Name" placeholder="Ihr Name" required>
-      <input type="email" name="Email" placeholder="Ihre E‑Mail-Adresse" required>
-      <textarea name="Nachricht" rows="5" placeholder="Ihre Nachricht" required></textarea>
-      <input type="submit" value="Nachricht senden">
-    </form>
+<form action="https://formsubmit.co/tobivox@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Ihr Name" required>
+  <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+  <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+
+  <!-- Optional aber empfehlenswert -->
+  <input type="hidden" name="_subject" value="Neue Website-Anfrage (Shiatsu)">
+  <input type="hidden" name="_captcha" value="true">
+  <input type="hidden" name="_template" value="table">
+ <input type="hidden" name="_next" value="https://emiliosalomon.github.io/shiatsu-website/contact.html#sent">
+
+
+  <!-- Datenschutz (empfohlen) -->
+  <label style="display:block; margin:10px 0;">
+   <input type="checkbox" name="privacy" required>
+    Ich stimme der Verarbeitung meiner Daten gemäß der
+    <a href="datenschutz.html" target="_blank" rel="noopener">Datenschutzerklärung</a> zu.
+  </label>
+
+  <button type="submit">Nachricht senden</button>
+</form>
+
   </section>
   
 <footer>
