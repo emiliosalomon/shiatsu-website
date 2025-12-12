@@ -44,6 +44,16 @@
       Österreich</p>
     <p>Ich freue mich darauf, von Ihnen zu hören!</p>
     <h3>Kontaktformular</h3>
+    <p id="sent" style="display:none; padding:12px; margin-bottom:15px; border:1px solid #2e7d32; border-radius:8px; background:#e8f5e9;">
+  ✅ Danke! Ihre Nachricht wurde erfolgreich gesendet. Ich melde mich so bald wie möglich.
+</p>
+
+<script>
+  if (window.location.hash === "#sent") {
+    document.getElementById("sent").style.display = "block";
+  }
+</script>
+
 <form action="https://formsubmit.co/tobivox@gmail.com" method="POST">
   <input type="text" name="name" placeholder="Ihr Name" required>
   <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
