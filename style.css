@@ -243,21 +243,14 @@ footer {
   }
 }
 .price-box {
-  max-width: 720px;
-  margin: 60px auto;
+  max-width: 760px;
+  margin: 30px auto;
   padding: 40px;
-  background: #fafafa;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  line-height: 1.6;
-}
 
-.price-box h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #a32020;
-}
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #faf7f7 100%
+  );
 
-.price-box p {
-  margin-bottom: 18px;
-}
+  border-left: 6px soli
