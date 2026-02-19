@@ -188,3 +188,50 @@ input:focus, textarea:focus {
   .grid-2, .footer-grid { grid-template-columns: 1fr; }
   .section-padding { padding: 40px 0; }
 }
+/* --- 10. Print Styles (Für den Gutschein-Druck) --- */
+.print-only {
+  display: none; /* Auf der Website unsichtbar */
+}
+
+@media print {
+  /* Verstecke die normale Website beim Drucken */
+  body * {
+    visibility: hidden;
+  }
+  
+  /* Zeige NUR den Gutschein an */
+  #printable-voucher, #printable-voucher * {
+    visibility: visible;
+  }
+  
+  #printable-voucher {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 60px;
+    border: 3px solid var(--color-primary);
+    border-radius: 15px;
+    text-align: center;
+    display: block;
+    background: #fff;
+  }
+
+  #printable-voucher h1 {
+    font-size: 3rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+  }
+
+  #printable-voucher p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .voucher-line {
+    border-bottom: 1px dashed #999;
+    width: 60%;
+    margin: 40px auto;
+    height: 30px;
+  }
+}
