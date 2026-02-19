@@ -1,264 +1,190 @@
-/* Global Styles */
+/* =========================================
+   TOBIAS SALOMON - PREMIUM SHIATSU DESIGN
+   ========================================= */
+
+/* --- 1. CSS Variablen (Zentrale Steuerung) --- */
+:root {
+  --color-bg: #FDFBF7; /* Warmes Off-White */
+  --color-text-main: #333333;
+  --color-text-muted: #555555;
+  --color-primary: #D32F2F; /* Logofarbe / Akzent */
+  --color-primary-hover: #B71C1C;
+  --color-accent: #E8E1D5; /* Sanftes Sand/Beige */
+  --color-white: #ffffff;
+  
+  --font-text: 'Inter', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  
+  --container-width: 1000px; /* Kompakter, eleganter für Text */
+  --transition: all 0.3s ease;
+}
+
+/* --- 2. Reset & Basis --- */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 body {
-  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-  line-height: 1.6;
-  background-color: #f8f8f8;
-  color: #333;
+  font-family: var(--font-text);
+  color: var(--color-text-main);
+  background-color: var(--color-bg);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* 1. Bilder global flexibel machen für Handys */
-img {
-  max-width: 100%;
-  height: auto;
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: #1A1A1A;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
-a {
-  color: #b52e37;
-  text-decoration: none;
+p { margin-bottom: 1.5rem; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--color-primary); text-decoration: none; transition: var(--transition); }
+a:hover { color: var(--color-primary-hover); }
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
 }
-a:hover {
-  text-decoration: underline;
-}
-nav {
-  background-color: #ffffff;
-  border-bottom: 1px solid #eaeaea;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* Sticky navigation */
+
+/* --- 3. Header & Navigation --- */
+.site-header {
+  background-color: rgba(253, 251, 247, 0.98);
   position: sticky;
   top: 0;
   z-index: 1000;
-}
-nav a {
-  padding: 15px 20px;
-  font-weight: 600;
-  color: #333;
-}
-nav a:hover {
-  color: #b52e37;
-}
-.hero {
-  /* Background image with dark overlay */
-  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/hero.png') center/cover no-repeat;
-  padding: 120px 20px;
-  text-align: center;
-  color: #ffffff;
-}
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-.hero p {
-  max-width: 700px;
-  margin: 0 auto 30px;
-  font-size: 1.2rem;
-  /* heller Schriftton im Hero‑Bereich für bessere Lesbarkeit auf dunklem Overlay */
-  color: #eeeeee;
-}
-.cta-button {
-  display: inline-block;
-  background-color: #b52e37;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-  margin-top: 10px;
-}
-.cta-button:hover {
-  background-color: #a4232c;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
 }
 
-/* Logo styling */
-.logo-main {
-  max-width: 250px;
-  width: 80%;
-  margin: 0 auto 20px;
-  display: block;
-}
-
-.logo-dach {
-  max-width: 200px;
-  margin-top: 20px;
-}
-.section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-.section h2 {
-  margin-bottom: 20px;
-  color: #b52e37;
-  font-size: 1.8rem;
-}
-.section p {
-  margin-bottom: 15px;
-}
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-}
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* Generic image block for pages */
-.image-block {
-  text-align: center;
-  margin: 30px 0;
-}
-.image-block img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Services Section */
-.services {
+.header-inner {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
   justify-content: space-between;
-  margin-top: 40px;
-}
-.service-item {
-  flex: 1 1 300px;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-.service-item h3 {
-  color: #b52e37;
-  margin-bottom: 10px;
-}
-.service-item p {
-  margin-bottom: 10px;
+  align-items: center;
+  height: 80px;
 }
 
-/* Testimonials Section */
-.testimonials {
-  margin-top: 40px;
-}
-.testimonial {
-  background-color: #ffffff;
-  border-left: 4px solid #b52e37;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 4px;
-}
-.testimonial p {
-  margin-bottom: 10px;
-}
-.testimonial footer {
-  font-size: 0.9rem;
-  color: #666;
-}
+.logo { height: 50px; width: auto; }
 
-/* About intro section on the home page */
-.about-intro .intro-content {
+.main-nav ul {
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: flex-start;
-}
-.about-intro .intro-content img {
-  max-width: 220px;
-  border-radius: 8px;
-  flex: 0 0 220px;
-}
-.about-intro .intro-content p {
-  flex: 1;
+  gap: 24px;
+  align-items: center;
 }
 
-/* Page header for inner pages */
-.page-header {
-  background-color: #ffffff;
+.main-nav a {
+  color: var(--color-text-main);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.main-nav a:hover, .main-nav a.active { color: var(--color-primary); }
+
+/* --- 4. Buttons --- */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: var(--transition);
+  cursor: pointer;
   text-align: center;
-  padding: 40px 20px 30px;
-  border-bottom: 1px solid #eaeaea;
 }
-.page-header h1 {
-  color: #b52e37;
-  margin-top: 10px;
-  font-size: 2.2rem;
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: 2px solid var(--color-primary);
 }
-.page-header img.logo-main {
-  max-width: 220px;
-  margin: 0 auto 10px;
-  display: block;
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  color: var(--color-white);
 }
+
+/* --- 5. Layout Utilities & Sektionen --- */
+.section-padding { padding: 80px 0; }
+.bg-white { background-color: var(--color-white); }
+.text-center { text-align: center; }
+
+.page-header {
+  background-color: var(--color-accent);
+  padding: 60px 0 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.page-header h1 { font-size: 2.5rem; margin-bottom: 0; }
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* --- 6. Content Formatting --- */
+.content-box {
+  background: var(--color-white);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.image-rounded {
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* --- 7. Forms (Kontakt) --- */
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 600px;
+  gap: 20px;
 }
 input, textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
   border-radius: 4px;
-}
-input[type="submit"] {
-  background-color: #b52e37;
-  color: white;
-  border: none;
-  cursor: pointer;
+  font-family: var(--font-text);
   font-size: 1rem;
-  padding: 12px;
-  border-radius: 5px;
+  background-color: #fafafa;
 }
-input[type="submit"]:hover {
-  background-color: #a4232c;
-}
-footer {
-  background-color: #ffffff;
-  border-top: 1px solid #eaeaea;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: var(--color-white);
 }
 
-/* Media Query für Handys */
-@media (max-width: 600px) {
-  nav a {
-    flex: 1 1 100%;
-    text-align: center;
-    border-bottom: 1px solid #eaeaea;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1rem;
-  }
+/* --- 8. Footer --- */
+.site-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 20px;
+  margin-top: 60px;
 }
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-col h4 { color: #fff; font-size: 1.2rem; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 10px; }
+.footer-col a { color: #ccc; }
+.footer-col a:hover { color: var(--color-primary); }
 
-.price-box {
-  max-width: 760px;
-  margin: 30px auto;
-  padding: 40px;
-
-  background: linear-gradient(
-    180deg,
-    #ffffff 0%,
-    #faf7f7 100%
-  );
-
-  border-left: 6px solid #b52e37;
+/* --- 9. Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .header-inner { flex-direction: column; height: auto; padding: 20px 0; gap: 15px;}
+  .main-nav ul { flex-wrap: wrap; justify-content: center; gap: 15px; }
+  .grid-2, .footer-grid { grid-template-columns: 1fr; }
+  .section-padding { padding: 40px 0; }
 }
