@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakt & Terminbuchung | Tobias Salomon Mödling</title>
-  <meta name="description" content="Vereinbaren Sie Ihren Termin für Shiatsu oder Cranio Sacrale in meiner Praxis in Mödling. Rufen Sie an oder nutzen Sie das Kontaktformular.">
+  <meta name="description" content="Vereinbaren Sie Ihren Termin für Shiatsu oder Cranio Sacrale in meiner Praxis in Mödling.">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +15,7 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html">
-        <img src="images/logo-main.png" alt="Tobias Salomon Logo" class="logo">
-      </a>
+      <a href="index.html"><img src="images/logo-main.png" alt="Tobias Salomon Logo" class="logo"></a>
       <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -34,46 +32,42 @@
   <main>
     <header class="page-header">
       <div class="container">
-        <h1>Kontaktieren Sie mich</h1>
-        <p>Ich freue mich darauf, Sie in meiner Praxis in Mödling begrüßen zu dürfen.</p>
+        <h1>Kontakt & Terminvereinbarung</h1>
+        <p>Ich freue mich darauf, Sie in meiner Praxis in Mödling zu begrüßen.</p>
       </div>
     </header>
 
     <section class="section-padding">
       <div class="container grid-2" style="align-items: flex-start;">
         
-        <div>
-          <h2>Praxisadresse</h2>
-          <p style="font-size: 1.1rem; margin-bottom: 40px;">
+        <div class="content-box" style="border-top: 4px solid var(--color-primary);">
+          <h2 style="margin-bottom: 20px;">Termin anfragen</h2>
+          <p style="margin-bottom: 30px; color: var(--color-text-muted);">
+            Klicken Sie einfach auf einen der Buttons, um mir direkt eine E-Mail zu schreiben oder mich anzurufen. Sollte ich in einer Behandlung sein, rufe ich Sie verlässlich zurück.
+          </p>
+          
+          <div style="display: flex; flex-direction: column; gap: 15px; margin-bottom: 40px;">
+            <a href="mailto:tobivox@gmail.com?subject=Terminanfrage%20Shiatsu/Cranio" class="btn btn-primary" style="font-size: 1.1rem; padding: 16px; text-align: center;">
+              ✉️ E-Mail schreiben
+            </a>
+            <a href="tel:+4369910339191" class="btn btn-secondary" style="font-size: 1.1rem; padding: 16px; text-align: center; border-color: #ccc; color: #333;">
+              📞 0699 10 33 9191 anrufen
+            </a>
+          </div>
+
+          <h3 style="margin-bottom: 10px;">Praxisadresse</h3>
+          <p style="color: var(--color-text-muted);">
             <strong>Tobias Salomon</strong><br>
             Dr. Karl Giannogasse 7<br>
             2340 Mödling<br>
             Österreich
           </p>
-          
-          <h2>Direkter Kontakt</h2>
-          <p style="font-size: 1.1rem; margin-bottom: 20px;">
-            Haben Sie vorab Fragen oder möchten Sie telefonisch einen Termin vereinbaren?
-          </p>
-          <p style="font-size: 1.2rem; margin-bottom: 30px;">
-            📞 <a href="tel:+4369910339191" style="font-weight: 500;">0699 10 33 9191</a><br>
-            ✉️ <a href="mailto:tobivox@gmail.com" style="font-weight: 500;">tobivox@gmail.com</a>
-          </p>
         </div>
 
-        <div class="content-box">
-          <h2 style="margin-bottom: 10px;">Terminanfrage senden</h2>
-          <p style="margin-bottom: 25px; color: var(--color-text-muted);">Schreiben Sie mir gerne eine Nachricht. Ich melde mich so schnell wie möglich bei Ihnen zurück.</p>
-          
-          <form action="mailto:tobivox@gmail.com" method="post" enctype="text/plain">
-            <input type="text" name="Name" placeholder="Ihr vollständiger Name" required>
-            <input type="email" name="Email" placeholder="Ihre E-Mail-Adresse" required>
-            <input type="tel" name="Telefon" placeholder="Ihre Telefonnummer (optional)">
-            <textarea name="Nachricht" rows="5" placeholder="Ihre Nachricht oder Ihr Terminwunsch..." required></textarea>
-            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px; font-size: 1.1rem;">Nachricht senden</button>
-          </form>
+        <div class="image-wrapper">
+          <img src="images/photo1.png" alt="Tobias Salomon Behandlung" class="image-rounded" style="width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
         </div>
-        
+
       </div>
     </section>
   </main>
@@ -90,15 +84,13 @@
         <p><a href="tel:+4369910339191">0699 10 33 9191</a><br><a href="mailto:tobivox@gmail.com">tobivox@gmail.com</a></p>
       </div>
       <div class="footer-col">
-        <h4>Rechtliches & Partner</h4>
+        <h4>Rechtliches</h4>
         <ul>
           <li><a href="impressum.html">Impressum</a></li>
           <li><a href="datenschutz.html">Datenschutz</a></li>
-          <li><a href="https://www.ei-shiatsu.org/" target="_blank">Europäisches Shiatsu Institut (ESI)</a></li>
         </ul>
       </div>
     </div>
   </footer>
-
 </body>
 </html>
