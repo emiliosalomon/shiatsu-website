@@ -1,4 +1,3 @@
-
 /* Global Styles */
 * {
   box-sizing: border-box;
@@ -13,6 +12,13 @@ body {
   background-color: #f8f8f8;
   color: #333;
 }
+
+/* 1. Bilder global flexibel machen für Handys */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   color: #b52e37;
   text-decoration: none;
@@ -164,8 +170,6 @@ nav a:hover {
   color: #666;
 }
 
-/* Cookie banner styles removed as cookie banner is no longer included */
-
 /* About intro section on the home page */
 .about-intro .intro-content {
   display: flex;
@@ -229,6 +233,8 @@ footer {
   padding: 20px;
   margin-top: 40px;
 }
+
+/* Media Query für Handys */
 @media (max-width: 600px) {
   nav a {
     flex: 1 1 100%;
@@ -242,6 +248,7 @@ footer {
     font-size: 1rem;
   }
 }
+
 .price-box {
   max-width: 760px;
   margin: 30px auto;
@@ -253,4 +260,5 @@ footer {
     #faf7f7 100%
   );
 
-  border-left: 6px soli
+  border-left: 6px solid #b52e37;
+}
