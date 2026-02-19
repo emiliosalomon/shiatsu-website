@@ -1,53 +1,124 @@
-
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-AT">
 <head>
   <meta charset="UTF-8">
-  <title>Preise – Tobias Salomon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preise & Gutscheine | Tobias Salomon</title>
+  <meta name="description" content="Übersicht der Preise für Shiatsu und Cranio Sacrale Behandlungen. Erwerben Sie außerdem Gutscheine zum Verschenken direkt online.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  
+  <script>
+    // Druckfunktion für den Gutschein
+    function printVoucher() {
+      window.print();
+    }
+  </script>
 </head>
 <body>
-  
-<nav>
-  <a href="index.html">Home</a>
-  <a href="shiatsu.html">Shiatsu</a>
-  <a href="cranio.html">Cranio Sacrale</a>
-  <a href="about.html">Über mich</a>
-  <a href="prices.html">Preise</a>
-  <a href="photos.html">Fotos</a>
-  <a href="blog.html">Blog</a>
-  <a href="contact.html">Kontakt</a>
-  <a href="links.html">Links</a>
-  <a href="vouchers.html">Gutscheine</a>
-</nav>
 
- <section class="section">
-  <div class="price-box">
-    <h2>Preise</h2>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html">
+        <img src="images/logo-main.png" alt="Tobias Salomon Logo" class="logo">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shiatsu.html">Shiatsu</a></li>
+          <li><a href="cranio.html">Cranio Sacrale</a></li>
+          <li><a href="about.html">Über mich</a></li>
+          <li><a href="prices.html" class="active">Preise</a></li>
+          <li><a href="contact.html" class="btn btn-primary" style="color:white;">Termin anfragen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <p><strong>95&nbsp;€</strong> – eine Einheit (ca. 60 Minuten)</p>
-    <p><strong>520&nbsp;€</strong> – 6er Block (6 Einheiten)</p>
+  <main>
+    <header class="page-header">
+      <div class="container">
+        <h1>Preise & Gutscheine</h1>
+        <p>Investieren Sie in Ihre Gesundheit und Ihr Wohlbefinden.</p>
+      </div>
+    </header>
 
-    <p><em>Schenken Sie ein gutes Gefühl:</em><br>
-    Gerne stelle ich Gutscheine als Geschenk aus.</p>
+    <section class="section-padding">
+      <div class="container grid-2" style="align-items: stretch;">
+        
+        <div class="content-box" style="border-top: 4px solid var(--color-primary);">
+          <h2 style="margin-bottom: 30px;">Behandlungskosten</h2>
+          
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+            <div>
+              <h3 style="margin: 0; font-size: 1.2rem;">Einzelbehandlung</h3>
+              <span style="font-size: 0.9rem; color: var(--color-text-muted);">ca. 60 Minuten</span>
+            </div>
+            <div style="font-size: 1.5rem; font-weight: bold; color: var(--color-primary);">95 €</div>
+          </div>
+          
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+            <div>
+              <h3 style="margin: 0; font-size: 1.2rem;">6er Block</h3>
+              <span style="font-size: 0.9rem; color: var(--color-text-muted);">6 Einheiten (Preisersparnis)</span>
+            </div>
+            <div style="font-size: 1.5rem; font-weight: bold; color: var(--color-primary);">520 €</div>
+          </div>
 
-    <p>
-      Bitte bringen Sie zur Behandlung bequeme Kleidung
-      (Trainingsanzug o. Ä.) und warme Socken mit.
-    </p>
-  </div>
-</section>
+          <h3 style="font-size: 1.1rem; margin-bottom: 10px;">Bitte beachten Sie:</h3>
+          <p style="font-size: 0.95rem; color: var(--color-text-muted);">
+            Bitte bringen Sie zur Behandlung bequeme Kleidung (Trainingsanzug o. Ä.) und warme Socken mit.
+          </p>
+        </div>
 
-  
-<footer>
-  <p>&copy; 2025 Tobias Salomon | Shiatsu & Cranio Sacrale, Mödling | 
-    <a href="contact.html">Kontakt</a> | 
-    <a href="impressum.html">Impressum</a> | 
-    <a href="datenschutz.html">Datenschutz</a>
-  </p>
-</footer>
-  
-  </div>
+        <div class="content-box" style="background-color: var(--color-accent);">
+          <h2 style="margin-bottom: 15px;">Schenken Sie ein gutes Gefühl</h2>
+          <p style="margin-bottom: 25px;">Machen Sie Ihren Lieben eine Freude mit einem Shiatsu- oder Cranio Sacrale-Gutschein. So einfach geht's:</p>
+          
+          <ol style="margin-bottom: 25px; padding-left: 20px; font-size: 0.95rem;">
+            <li style="margin-bottom: 8px;">Drucken Sie den Gutschein über den Button unten aus.</li>
+            <li style="margin-bottom: 8px;">Kontaktieren Sie mich telefonisch oder per E-Mail zur Abstimmung.</li>
+            <li style="margin-bottom: 8px;">Überweisen Sie den gewünschten Betrag.</li>
+          </ol>
+
+          <div style="background: rgba(255,255,255,0.6); padding: 15px; border-radius: 4px; margin-bottom: 25px; font-size: 0.9rem;">
+            <strong>Bankverbindung:</strong><br>
+            EASYBANK (14200)<br>
+            IBAN: AT20 1420 0200 1056 1133<br>
+            BIC: EASYATW1
+          </div>
+
+          <button onclick="printVoucher()" class="btn btn-primary" style="width: 100%;">🖨️ Gutschein als PDF drucken</button>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4>Tobias Salomon</h4>
+        <p>Achtsame Berührung für Körper und Geist in Mödling.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <p>Dr. Karl Giannogasse 7<br>2340 Mödling</p>
+        <p><a href="tel:+4369910339191">0699 10 33 9191</a><br><a href="mailto:tobivox@gmail.com">tobivox@gmail.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h4>Rechtliches & Partner</h4>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="https://www.ei-shiatsu.org/" target="_blank">Europäisches Shiatsu Institut (ESI)</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
